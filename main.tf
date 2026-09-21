@@ -1,9 +1,8 @@
 data "aws_ami" "app_ami"{
-  include_deprecated = true
   most_recent = true
   filter {
     name = "name"
-    values = ["bitnami-tomcat-*-x86_64-hvm-ebs-nami"]
+    values = ["al2023-ami-2023.*-x86_64"]
   }
   owners = ["979382823631"]
 }
