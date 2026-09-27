@@ -1,4 +1,4 @@
-data "aws_ami" "app_ami"{
+data "aws_ami" "terraform-user"{
   most_recent = true
   filter {
     name = "name"
